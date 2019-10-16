@@ -1,0 +1,49 @@
+.top-deal {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $screen-xs) {
+    width: calc(33.333% - 10px);
+    margin-bottom: 0;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__texts {
+    padding: 10px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__type {
+    font-size: 12px;
+  }
+
+  &__price {
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  &__new-price {
+    font-weight: 700;
+    color: $color-pale-red;
+  }
+
+  &__deal {
+    background-color: $color-pale-red;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 5px;
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,81 @@
+.btn {
+  display: inline-block;
+  padding: 10px;
+  max-width: 100%;
+  color: $color-white;
+  background-color: $color-pale-red;
+  border: solid 1px $color-pale-red;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  @media screen and (min-width: $screen-xs) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: 21px;
+  }
+
+  &:hover {
+    color: $color-pale-red;
+    background-color: $color-white;
+  }
+
+  &--arrow {
+    position: relative;
+    border-radius: 0;
+    border: none;
+    transition: 0.4s;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 37px;
+
+    &:hover {
+      background-color: $color-pale-red;
+      color: #fff;
+      opacity: 0.7;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 100%;
+      width: 0;
+      height: 0;
+      border-bottom: 18px solid $color-pale-red;
+      border-left: 10px solid transparent;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 0;
+      height: 0;
+      border-top: 18px solid $color-pale-red;
+      border-left: 10px solid transparent;
+    }
+  }
+
+  &__apex {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-top: 18px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 10px solid $color-pale-red;
+  }
+}

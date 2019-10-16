@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $font-primary;
+  font-size: 12px;
+  color: #363e40;
+
+  @media screen and (min-width: $screen-xs) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: $font-secondary;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: $font-secondary;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+small {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 700;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+hr {
+  border: solid 0.5px $color-pinkish-grey;
+}

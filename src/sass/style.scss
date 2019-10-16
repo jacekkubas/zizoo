@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Quattrocento:700&display=swap');
+@import 'reset';
+@import 'variables';
+@import 'grid';
+@import 'base';
+
+@import './components/page';
+@import './components/header';
+@import './components/list-item';
+@import './components/top-deals';
+@import './components/top-deal';
+@import './components/filter';
+@import './components/btn';
+@import './components/request';
+@import './components/footer';

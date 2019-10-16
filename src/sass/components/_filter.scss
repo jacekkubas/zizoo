@@ -1,0 +1,33 @@
+.filter {
+  width: 100%;
+  margin-top: 23px;
+
+  &__input {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px $color-greeny-blue;
+    transition: border-color 0.4s;
+
+    &:focus {
+      outline: none;
+      border-color: $color-pale-red;
+    }
+
+    &--50 {
+      width: calc(50% - 5px);
+    }
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}

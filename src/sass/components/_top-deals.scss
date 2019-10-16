@@ -1,0 +1,13 @@
+.top-deals {
+  margin-bottom: 30px;
+
+  &__wrapper {
+    margin-top: 15px;
+    display: block;
+
+    @media screen and (min-width: $screen-xs) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
