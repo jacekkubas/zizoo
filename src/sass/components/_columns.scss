@@ -1,0 +1,86 @@
+.columns {
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: block;
+
+  @media screen and (min-width: $screen-sm) {
+    display: flex;
+  }
+
+  &__column {
+    min-width: 75px;
+    display: flex;
+
+    @media screen and (min-width: $screen-sm) {
+      display: block;
+      margin-right: 10px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      min-width: 90px;
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__inner-row {
+    line-height: 22px;
+    width: 50%;
+    flex-shrink: 0;
+    padding-right: 10px;
+
+    @media screen and (min-width: $screen-sm) {
+      width: auto;
+      padding-right: inherit;
+      margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__extra {
+    line-height: 20px;
+
+    &:nth-child(n + 2) {
+      &:after {
+        display: none;
+
+        @media screen and (min-width: $screen-sm) {
+          display: inline;
+        }
+      }
+    }
+
+    &:nth-child(n + 3) {
+      display: none;
+
+      @media screen and (min-width: $screen-sm) {
+        display: inline;
+      }
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      line-height: 22px;
+    }
+
+    &:after {
+      content: ',';
+      display: inline;
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

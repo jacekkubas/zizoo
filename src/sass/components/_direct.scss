@@ -1,0 +1,17 @@
+.direct {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 2;
+
+  &__inner {
+    margin-bottom: 5px;
+
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 10px;
+    }
+  }
+}

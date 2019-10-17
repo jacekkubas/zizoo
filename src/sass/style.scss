@@ -3,13 +3,24 @@
 @import 'variables';
 @import 'grid';
 @import 'base';
+@import 'global';
 
 @import './components/page';
 @import './components/header';
-@import './components/list-item';
+@import './components/filter';
 @import './components/top-deals';
 @import './components/top-deal';
-@import './components/filter';
+@import './components/list-item';
+@import './components/image';
+@import './components/name';
+@import './components/heart';
+@import './components/hot';
+@import './components/box';
+@import './components/tags';
+@import './components/columns';
+@import './components/stars';
+@import './components/weekly';
+@import './components/direct';
 @import './components/btn';
 @import './components/request';
 @import './components/footer';

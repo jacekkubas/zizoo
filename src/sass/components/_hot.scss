@@ -1,0 +1,50 @@
+.hot {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 15px 20px;
+  }
+
+  &__wrapper {
+    min-width: 50px;
+    text-align: left;
+    color: $color-pale-red;
+    line-height: 20px;
+
+    @media screen and (min-width: $screen-xs) {
+      min-width: 130px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      line-height: 22px;
+      min-width: 150px;
+    }
+  }
+
+  &__badge {
+    background-color: $color-pale-red;
+    color: $color-white;
+    padding: 0 5px;
+    border-radius: 2px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: $screen-xs) {
+      display: inline-block;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+
+    @media screen and (min-width: $screen-sm) {
+      font-size: initial;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.heart {
+  display: none;
+  align-items: center;
+
+  @media screen and (min-width: $screen-xs) {
+    display: flex;
+  }
+
+  &--liked {
+    path {
+      fill: $color-pale-red;
+    }
+  }
+}
