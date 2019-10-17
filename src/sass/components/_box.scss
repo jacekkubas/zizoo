@@ -1,0 +1,31 @@
+.box {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 15px 20px;
+  }
+
+  &--border-right {
+    border-right: 1px solid $color-pinkish-grey;
+  }
+
+  &__subheading {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    color: $color-charcoal-grey-50;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $screen-xl) {
+      font-size: 14px;
+    }
+  }
+}

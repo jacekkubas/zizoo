@@ -1,0 +1,12 @@
+.stars {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 15px 20px;
+  }
+}

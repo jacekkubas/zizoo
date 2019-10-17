@@ -1,0 +1,13 @@
+.text {
+  color: $color-charcoal-grey-50;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: 14px;
+  }
+}
+
+.text-bold {
+  font-weight: 600;
+}

@@ -1,0 +1,21 @@
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__year {
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+
+    @media screen and (min-width: $screen-xs) {
+      display: inline;
+      margin-top: 0;
+      margin-left: 5px;
+    }
+  }
+}

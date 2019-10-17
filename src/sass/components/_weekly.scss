@@ -1,0 +1,59 @@
+.weekly {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border-right: solid 1px $color-pinkish-grey;
+  text-align: left;
+
+  @media screen and (min-width: $screen-sm) {
+    border-right: none;
+    border-bottom: solid 1px $color-pinkish-grey;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 15px 20px;
+  }
+
+  &__price {
+    display: block;
+    margin: 5px 0;
+
+    @media screen and (min-width: $screen-sm) {
+      display: inline-block;
+      margin: 5px;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      margin: 0 10px;
+    }
+  }
+
+  &__price-amount {
+    font-size: 16px;
+    margin-right: 5px;
+
+    @media screen and (min-width: $screen-xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__questionmark {
+    svg {
+      width: 11px;
+
+      @media screen and (min-width: $screen-md) {
+        width: initial;
+      }
+    }
+  }
+}
